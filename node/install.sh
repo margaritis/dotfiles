@@ -6,3 +6,4 @@ brew install nvm
 source $(brew --prefix nvm)/nvm.sh
 nvm install node
 nvm install iojs
+nvm use node
