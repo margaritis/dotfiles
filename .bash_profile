@@ -55,3 +55,5 @@ source $(brew --prefix nvm)/nvm.sh;
 # Profile currently not used
 # source ~/.profile;
 
+# Add z
+. `brew --prefix`/etc/profile.d/z.sh
