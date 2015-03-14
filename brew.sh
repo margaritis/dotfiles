@@ -118,5 +118,8 @@ source ./cask/install.sh;
 # Install AWS CLI
 brew install awscli
 
+# Install Docker
+source ./docker/install.sh;
+
 # Remove outdated versions from the cellar.
 brew cleanup
