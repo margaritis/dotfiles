@@ -103,16 +103,17 @@ brew install tree
 brew install webkit2png
 brew install zopfli
 brew install ansible
+brew install mongodb
 
 #Install libraries for Software installation
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
 # Node and io.js manager
-brew install nvm
+source ./node/install.sh;
 
 # Install MAC OS apps
-source ./install-apps.sh;
+source ./cask/install.sh;
 
 # Install AWS CLI
 brew install awscli
