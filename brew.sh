@@ -114,5 +114,8 @@ brew install nvm
 # Install MAC OS apps
 source ./install-apps.sh;
 
+# Install AWS CLI
+brew install awscli
+
 # Remove outdated versions from the cellar.
 brew cleanup
