@@ -20,7 +20,7 @@ apps=(
   spotify
   appcleaner
   hazel
-  Karabiner
+  karabiner
   virtualbox
   vagrant
   vagrant-manager
@@ -44,6 +44,7 @@ apps=(
   cloudup
   firefoxdeveloperedition
   cheatsheet
+  eclipse-ide
 )
 
 # Install apps to /Applications
