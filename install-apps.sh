@@ -47,6 +47,7 @@ apps=(
   cheatsheet
   eclipse-ide
   github
+  java
   # slate
 )
 
