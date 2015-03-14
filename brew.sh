@@ -12,7 +12,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 if test ! $(which brew); then
   echo "Installing Homebrew for you."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-else 
+else
   printf "Homebrew is already installed.\nProceeding with library installation."
 fi
 
@@ -102,7 +102,7 @@ brew install ssh-copy-id
 brew install tree
 brew install webkit2png
 brew install zopfli
-
+brew install ansible
 
 #Install libraries for Software installation
 brew install caskroom/cask/brew-cask
