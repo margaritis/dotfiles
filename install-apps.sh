@@ -21,11 +21,12 @@ apps=(
   appcleaner
   hazel
   Karabiner
+  virtualbox
   vagrant
+  vagrant-manager
   flash
   iterm2
-  shiori
-  virtualbox
+  shiori  
   atom
   sublime-text3
   teamviewer
@@ -42,6 +43,7 @@ apps=(
   vlc
   cloudup
   firefoxdeveloperedition
+  cheatsheet
 )
 
 # Install apps to /Applications
