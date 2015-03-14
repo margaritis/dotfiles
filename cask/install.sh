@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Apps
 apps=(
   alfred
@@ -48,6 +50,7 @@ apps=(
   eclipse-ide
   github
   java
+  sourcetree
   # slate
 )
 

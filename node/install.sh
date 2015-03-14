@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # Install nodejs and iojs throught nvm.
 # TODO: add more options

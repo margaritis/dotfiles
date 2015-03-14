@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 brew install java
 brew install jenv
 

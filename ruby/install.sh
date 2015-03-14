@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Check for rvm
 if test ! $(which rvm); then
   echo "Installing RVM for you."
