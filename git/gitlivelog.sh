@@ -1,4 +1,5 @@
 #!/bin/sh
+
 while true;
 do
     clear
