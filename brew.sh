@@ -104,6 +104,7 @@ brew install webkit2png
 brew install zopfli
 brew install ansible
 brew install mongodb
+brew install z
 
 #Install libraries for Software installation
 brew install caskroom/cask/brew-cask
