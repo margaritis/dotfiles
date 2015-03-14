@@ -13,6 +13,7 @@ apps=(
   suspicious-package
   dropbox
   google-chrome
+  google-hangouts
   firefox
   opera
   slack
@@ -26,7 +27,7 @@ apps=(
   vagrant-manager
   flash
   iterm2
-  shiori  
+  shiori
   atom
   sublime-text3
   teamviewer
@@ -37,7 +38,7 @@ apps=(
   mysqlworkbench
   mamp
   cyberduck
-  transmission  
+  transmission
   dash
   mailbox
   vlc
@@ -45,6 +46,8 @@ apps=(
   firefoxdeveloperedition
   cheatsheet
   eclipse-ide
+  github
+  # slate
 )
 
 # Install apps to /Applications
