@@ -111,5 +111,8 @@ brew tap caskroom/versions
 # Node and io.js manager
 brew install nvm
 
+# Install MAC OS apps
+source ./install-apps.sh;
+
 # Remove outdated versions from the cellar.
 brew cleanup
