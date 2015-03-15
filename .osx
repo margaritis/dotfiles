@@ -751,6 +751,24 @@ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/sub
 # Change Sublime Icon
 cp init/Sublime\ Text.icns /Applications/Sublime\ Text.app/Contents/Resources/Sublime\ Text.icns
 
+# echo ""
+# echo "Setting Git to use Sublime Text as default editor"
+# git config --global core.editor "subl -n -w"
+
+# Setup Sublime syncing (WIP)
+echo ""
+echo "Is this your first machine setting up Sublime?"
+read -r response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+    mkdir ~/Google\ Drive/Sublime
+    mv ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User ~/Google\ Drive/Sublime/
+    ln -s ~/Google\ Drive/Sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
+else
+    rm -r ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+    ln -s ~/Google\ Drive/Sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
+fi
+
+
 
 ###############################################################################
 # Transmission.app                                                            #
