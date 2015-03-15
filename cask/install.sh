@@ -4,6 +4,7 @@
 apps=(
   alfred
   qlcolorcode
+  coconutbattery
   qlstephen
   qlmarkdown
   quicklook-json
