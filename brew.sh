@@ -122,5 +122,8 @@ brew install awscli
 # Install Docker
 source ./docker/install.sh;
 
+# Heroku Toolbelt
+brew install heroku-toolbelt
+
 # Remove outdated versions from the cellar.
 brew cleanup
