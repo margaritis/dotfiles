@@ -1,4 +1,5 @@
 {
+	
 	"auto_complete": true,
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"command": "paste",
@@ -34,6 +35,7 @@
 	"font_face": "Monaco",
 	"font_size": 14,
 	"highlight_modified_tabs": true,
+	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
