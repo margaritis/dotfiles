@@ -51,7 +51,7 @@ brew install wget --with-iri
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
 brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
+brew install homebrew/dupes/openssh --with-brewed-openssl --with-keychain-support
 brew install homebrew/dupes/screen
 brew install homebrew/php/php55 --with-gmp
 
