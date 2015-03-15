@@ -616,6 +616,9 @@ EOD
 #defaults write com.apple.terminal FocusFollowsMouse -bool true
 #defaults write org.x.X11 wm_ffm -bool true
 
+# Install the Solarized Dark theme for Terminal
+open "${HOME}/init/Solarized Dark xterm-256color.terminal"
+
 # Install the Solarized Dark theme for iTerm
 open "${HOME}/init/Solarized Dark.itermcolors"
 
