@@ -57,3 +57,9 @@ source $(brew --prefix nvm)/nvm.sh;
 
 # Add z
 . `brew --prefix`/etc/profile.d/z.sh
+
+
+# if [ -z "$SSH_AUTH_SOCK" ] ; then
+#   eval `ssh-agent -s`
+#   ssh-add
+# fi
