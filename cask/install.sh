@@ -52,6 +52,7 @@ apps=(
   github
   java
   sourcetree
+  google-drive
   # slate
 )
 
