@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# https://github.com/creationix/nvm
 # Install nodejs and iojs throught nvm.
 # TODO: add more options
 brew install nvm
