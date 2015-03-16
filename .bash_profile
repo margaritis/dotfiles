@@ -47,8 +47,13 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
-# Provide nvm
-source $(brew --prefix nvm)/nvm.sh;
+# Set download NVM dir
+export NVM_DIR=~/.nvm;
+
+# Load nvm script
+if [[ -s $(brew --prefix nvm)/nvm.sh ]]; then
+  source $(brew --prefix nvm)/nvm.sh
+fi
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
@@ -59,12 +64,12 @@ source $(brew --prefix nvm)/nvm.sh;
 . `brew --prefix`/etc/profile.d/z.sh
 
 # pip should only run if there is a virtualenv currently activated
-export PIP_REQUIRE_VIRTUALENV=true
+export PIP_REQUIRE_VIRTUALENV=true;
 # cache pip-installed packages to avoid re-downloading
-export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
+export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache;
 
 # Add dev virtualenv
-source ~/Envs/DevVirtualEnv/bin/activate
+source ~/Envs/DevVirtualEnv/bin/activate;
 
-# Set NVM to use node on start up
+# Set NVM to use node on start up (non interactive mode can use nvm)
 nvm use node
