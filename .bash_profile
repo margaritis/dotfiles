@@ -65,3 +65,6 @@ export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 
 # Add dev virtualenv
 source ~/Envs/DevVirtualEnv/bin/activate
+
+# Set NVM to use node on start up
+nvm use node
