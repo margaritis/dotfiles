@@ -55,14 +55,6 @@ if [[ -s $(brew --prefix nvm)/nvm.sh ]]; then
   source $(brew --prefix nvm)/nvm.sh
 fi
 
-# Enable bash completion
-# [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
-
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-# Profile currently not used
-# source ~/.profile;
-
 # Add z
 . `brew --prefix`/etc/profile.d/z.sh
 
@@ -73,6 +65,14 @@ export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache;
 
 # Add dev virtualenv
 source ~/Envs/DevVirtualEnv/bin/activate;
+
+# Enable bash completion
+# [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
+
+# Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+# Profile currently not used
+# source ~/.profile;
 
 # Set NVM to use node on start up (non interactive mode can use nvm)
 nvm use node
