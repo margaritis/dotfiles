@@ -123,6 +123,9 @@ brew install awscli
 # Install Docker
 source ./docker/install.sh;
 
+# Install python, pip and virtualenv
+source ./python/install.sh;
+
 # Heroku Toolbelt
 brew install heroku-toolbelt
 
