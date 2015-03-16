@@ -14,6 +14,7 @@ apps=(
   qlimagesize
   webpquicklook
   suspicious-package
+  google-drive
   dropbox
   google-chrome
   google-hangouts
@@ -52,7 +53,6 @@ apps=(
   github
   java
   sourcetree
-  google-drive
   # slate
 )
 
