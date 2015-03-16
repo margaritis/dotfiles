@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# http://virtualenvwrapper.readthedocs.org/en/latest/index.html
 
 brew install python
 brew install python3
