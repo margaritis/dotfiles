@@ -752,6 +752,8 @@ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/sub
 
 # Change Sublime Icon
 cp init/Sublime\ Text.icns /Applications/Sublime\ Text.app/Contents/Resources/Sublime\ Text.icns
+touch /Applications/Sublime\ Text.app/
+touch /Applications/Sublime\ Text.app/Contents/Info.plist
 
 # echo ""
 # echo "Setting Git to use Sublime Text as default editor"
