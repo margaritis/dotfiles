@@ -114,23 +114,23 @@ brew tap caskroom/versions
 # Node and io.js manager
 source ./node/install.sh;
 
-# Install MAC OS apps
-source ./cask/install.sh;
-
 # Install AWS CLI
 brew install awscli
 
 # Install Docker
 source ./docker/install.sh;
 
-# Install python, pip and virtualenv
-source ./python/install.sh;
-
 # Install RVM and Ruby
 source ./ruby/install.sh;
 
+# Install python, pip and virtualenv
+source ./python/install.sh;
+
 # Heroku Toolbelt
 brew install heroku-toolbelt
+
+# Install MAC OS apps
+source ./cask/install.sh;
 
 # Remove outdated versions from the cellar.
 brew cleanup
