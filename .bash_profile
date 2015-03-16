@@ -51,15 +51,17 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 source $(brew --prefix nvm)/nvm.sh;
 
 # Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 # Profile currently not used
 # source ~/.profile;
 
 # Add z
 . `brew --prefix`/etc/profile.d/z.sh
 
+# pip should only run if there is a virtualenv currently activated
+export PIP_REQUIRE_VIRTUALENV=true
+# cache pip-installed packages to avoid re-downloading
+export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 
-# if [ -z "$SSH_AUTH_SOCK" ] ; then
-#   eval `ssh-agent -s`
-#   ssh-add
-# fi
+# Add dev virtualenv
+source ~/Envs/DevVirtualEnv/bin/activate
