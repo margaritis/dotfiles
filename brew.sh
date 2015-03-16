@@ -126,6 +126,9 @@ source ./docker/install.sh;
 # Install python, pip and virtualenv
 source ./python/install.sh;
 
+# Install RVM and Ruby
+source ./ruby/install.sh;
+
 # Heroku Toolbelt
 brew install heroku-toolbelt
 
