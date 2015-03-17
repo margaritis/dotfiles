@@ -10,4 +10,4 @@ export NVM_DIR=~/.nvm;
 nvm install node
 nvm install iojs
 nvm use node
-npm install -g jshint jscs
+npm install -g jshint jscs jsxhint
