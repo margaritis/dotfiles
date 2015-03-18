@@ -8,6 +8,7 @@ else
   printf "RVM is already installed."
 fi
 
+export PATH="$HOME/.rvm/bin:$PATH";
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 rvm install 1.9.3
 rvm install 2.2.0
