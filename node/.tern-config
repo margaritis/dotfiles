@@ -1,0 +1,12 @@
+{
+  "libs": [
+    "browser",
+    "ecma5",
+    "jQuery",
+    "underscore"
+  ],
+  "plugins": {
+    "node": {}
+  }
+}
+
