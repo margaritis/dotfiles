@@ -739,6 +739,9 @@ defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnNextStart -bool false
 # Sublime Text                                                                #
 ###############################################################################
 
+#Prior to running the .osx files it is recommended to install packate control to Sublime. 
+#Update the documentation to include this info
+
 # Install Sublime Text settings
 cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings 2> /dev/null
 
