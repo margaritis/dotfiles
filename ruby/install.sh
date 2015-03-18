@@ -13,4 +13,4 @@ rvm install 1.9.3
 rvm install 2.2.0
 
 # Install gems
-source ./deps.sh;
+source ./ruby/deps.sh;
