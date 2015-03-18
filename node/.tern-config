@@ -6,7 +6,10 @@
     "underscore"
   ],
   "plugins": {
-    "node": {}
+    "node": {},
+    "requirejs": {
+      "baseURL": "./libs",
+      "paths": {}
+    }
   }
 }
-
