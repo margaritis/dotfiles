@@ -770,9 +770,14 @@ fi
 ###############################################################################
 # MySQL Workbench
 ###############################################################################
-    rm -r ~/Library/Application\ Support/MySQL/Workbench/connections.xml
-    ln -s ~/Google\ Drive/Config/MySQL/connections.xml ~/Library/Application\ Support/MySQL/Workbench/connections.xml
+rm -r ~/Library/Application\ Support/MySQL/Workbench/connections.xml
+ln -s ~/Google\ Drive/Config/MySQL/connections.xml ~/Library/Application\ Support/MySQL/Workbench/connections.xml
 
+###############################################################################
+# Git config
+###############################################################################
+rm -r ~/.extra
+ln -s ~/Google\ Drive/Config/Git/.extra ~/.extra
 
 ###############################################################################
 # Transmission.app                                                            #
