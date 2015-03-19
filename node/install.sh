@@ -10,4 +10,4 @@ export NVM_DIR=~/.nvm;
 nvm install node
 nvm install iojs
 nvm use node
-npm install -g jshint jscs jsxhint grunt-cli
+npm install -g jshint jscs jsxhint grunt-cli bower
