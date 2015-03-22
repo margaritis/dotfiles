@@ -776,6 +776,7 @@ fi
 rm -r ~/Library/Application\ Support/MySQL/Workbench/connections.xml
 ln -s ~/Google\ Drive/Config/MySQL/connections.xml ~/Library/Application\ Support/MySQL/Workbench/connections.xml
 
+
 ###############################################################################
 # Git config
 ###############################################################################
@@ -788,6 +789,8 @@ ln -s ~/Google\ Drive/Config/Git/.extra ~/.extra
 ###############################################################################
 ln -s ~/Projects /Applications/MAMP/htdocs
 
+rm -r /Applications/MAMP/db/mysql
+ln -s ~/Google\ Drive/Config/Mamp/mysql /Applications/MAMP/db/mysql
 
 ###############################################################################
 # Transmission.app                                                            #
