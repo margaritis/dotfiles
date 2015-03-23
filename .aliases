@@ -119,6 +119,10 @@ alias badge="tput bel"
 # find . -name .gitattributes | map dirname
 alias map="xargs -n1"
 
+
+# Run mongod with configuration from brew
+alias mg="mongod --config /usr/local/etc/mongod.conf"
+
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
 	alias "$method"="lwp-request -m '$method'"
