@@ -107,6 +107,8 @@ brew install ansible
 brew install mongodb
 brew install z
 brew install git-flow
+brew install git-extras
+
 
 #Install libraries for Software installation
 brew install caskroom/cask/brew-cask
