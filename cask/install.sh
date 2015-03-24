@@ -53,6 +53,7 @@ apps=(
   github
   java
   sourcetree
+  flashlight
   # slate
 )
 
