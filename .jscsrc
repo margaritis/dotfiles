@@ -36,10 +36,10 @@
     "disallowYodaConditions": true,
     "safeContextKeyword": ["self"],
     "disallowEmptyBlocks": true,
-    // "requireCamelCaseOrUpperCaseIdentifiers": true,
-    // "maximumLineLength": 120,
-    // "disallowMultipleVarDecl": true,
-    // "disallowSpacesInCallExpression": true,
+    "requireCamelCaseOrUpperCaseIdentifiers": true,
+    "maximumLineLength": 120,
+    "disallowMultipleVarDecl": true,
+    "disallowSpacesInCallExpression": true,
     "requireSpacesInFunctionExpression": {
         "beforeOpeningRoundBrace": true,
         "beforeOpeningCurlyBrace": true
