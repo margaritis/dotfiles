@@ -8,6 +8,7 @@
   ],
   "plugins": {
     "node": {},
+    "complete_strings": {},
     "requirejs": {
       "baseURL": "./libs",
       "paths": {}
