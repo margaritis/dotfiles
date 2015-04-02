@@ -10,6 +10,7 @@ packages=(
   yo
   generator-angular-fullstack
   generator-api-service
+  tern
 )
 
 echo "installing npm packages..."
