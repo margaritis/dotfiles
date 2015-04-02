@@ -35,8 +35,8 @@
         ".tags",
         ".tags_sorted_by_file",
         ".gemtags",
-        ".sonar",
-        ".idea"
+        ".idea",
+        ".sonar"
     ],
     "find_selected_text": true,
     "folder_exclude_patterns":
@@ -46,16 +46,15 @@
         ".sonar",
         ".idea"
     ],
-    "font_face": "Source Code Pro",
-    "font_size": 16,
+    "font_face": "Anonymous Pro",
+    "font_size": 18,
     "highlight_line": true,
     "highlight_modified_tabs": true,
-    "hot_exit": false,
+    "hot_exit": true,
     "ignored_packages":
     [
         "Vintage",
-        "SublimeCodeIntel",
-        "tern_for_sublime"
+        "SublimeCodeIntel"
     ],
     "line_padding_bottom": 1,
     "line_padding_top": 1,
