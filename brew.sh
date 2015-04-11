@@ -113,6 +113,7 @@ brew install git-extras
 #Install libraries for Software installation
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
+brew tap caskroom/fonts
 
 # Node and io.js manager
 source ./node/install.sh;
