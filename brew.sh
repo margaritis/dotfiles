@@ -37,7 +37,8 @@ brew install gnu-sed --with-default-names
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
 brew install bash
-brew install bash-completion
+brew tap homebrew/versions
+brew install bash-completion2
 
 # Install `wget` with IRI support.
 brew install wget --with-iri
@@ -62,6 +63,7 @@ brew install sfnt2woff-zopfli
 brew install woff2
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
+brew install aircrack-ng
 brew install bfg
 brew install binutils
 brew install binwalk
@@ -90,6 +92,7 @@ brew install rsync
 brew install ack
 #brew install exiv2
 brew install git
+brew install git-lfs
 brew install imagemagick --with-webp
 brew install lua
 brew install lynx
