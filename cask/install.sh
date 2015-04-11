@@ -54,7 +54,11 @@ apps=(
   java
   sourcetree
   flashlight
+  fluid
+  font-inconsolata
   # slate
+  # bee (if available)
+  # Majic (attlasian)
 )
 
 # Install apps to /Applications
