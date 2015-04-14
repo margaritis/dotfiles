@@ -10,3 +10,6 @@ export NVM_DIR=~/.nvm;
 nvm install node
 nvm install iojs
 nvm alias default node
+
+# Install npm packages
+source ./node/npm.sh;
