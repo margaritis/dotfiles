@@ -55,7 +55,13 @@ apps=(
   sourcetree
   flashlight
   fluid
+  spectacle
   font-inconsolata
+  font-anonymous-pro
+  font-anonymous-pro-for-powerline
+  font-courier-prime
+  font-source-code-pro
+  font-source-code-pro-for-powerline
   # slate
   # bee (if available)
   # Majic (attlasian)
