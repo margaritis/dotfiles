@@ -9,4 +9,4 @@ mkdir ~/.nvm
 export NVM_DIR=~/.nvm;
 nvm install node
 nvm install iojs
-nvm use node
+nvm alias default node
