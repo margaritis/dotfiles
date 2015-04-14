@@ -56,6 +56,10 @@ if [[ -s $(brew --prefix nvm)/nvm.sh ]]; then
 
   # Enable bash completion
   [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
+
+  # Set NVM to use node on start up (non interactive mode can use nvm)
+  nvm use node
+
 fi
 
 # Add z
@@ -73,6 +77,3 @@ source ~/Envs/DevVirtualEnv/bin/activate;
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 # Profile currently not used
 # source ~/.profile;
-
-# Set NVM to use node on start up (non interactive mode can use nvm)
-nvm use node
