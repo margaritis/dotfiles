@@ -47,12 +47,13 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
-# Set download NVM dir
-export NVM_DIR=~/.nvm;
-
 # Load nvm script
 if [[ -s $(brew --prefix nvm)/nvm.sh ]]; then
+  # Set download NVM dir
+  export NVM_DIR=~/.nvm;
+
   source $(brew --prefix nvm)/nvm.sh
+
   # Enable bash completion
   [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 fi
