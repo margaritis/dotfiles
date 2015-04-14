@@ -57,9 +57,10 @@ if [[ -s $(brew --prefix nvm)/nvm.sh ]]; then
   # Enable bash completion
   [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 
-  # Set NVM to use node on start up (non interactive mode can use nvm)
-  nvm use node
-
+  # Set NVM to use node on start up (non interactive mode can use nvm).
+  # In case you are not using default node for your shell uncomment
+  # the following line to use node or a specific version of node.
+  # nvm use node
 fi
 
 # Add z
