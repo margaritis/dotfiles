@@ -244,3 +244,10 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+function updateShells(){
+    if  ! grep -Fxq "/usr/local/bin/bash" /etc/shells ; then
+        echo "/usr/local/bin/bash" | sudo tee -a /etc/shells > /dev/null
+        chsh -s /usr/local/bin/bash
+    fi
+}
