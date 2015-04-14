@@ -71,6 +71,8 @@ export PIP_REQUIRE_VIRTUALENV=true;
 # cache pip-installed packages to avoid re-downloading
 export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache;
 
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+
 # Add dev virtualenv
 source ~/Envs/DevVirtualEnv/bin/activate;
 
