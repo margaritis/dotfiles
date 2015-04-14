@@ -53,6 +53,8 @@ export NVM_DIR=~/.nvm;
 # Load nvm script
 if [[ -s $(brew --prefix nvm)/nvm.sh ]]; then
   source $(brew --prefix nvm)/nvm.sh
+  # Enable bash completion
+  [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 fi
 
 # Add z
@@ -65,9 +67,6 @@ export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache;
 
 # Add dev virtualenv
 source ~/Envs/DevVirtualEnv/bin/activate;
-
-# Enable bash completion
-# [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
