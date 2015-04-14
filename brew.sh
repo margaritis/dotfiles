@@ -40,6 +40,9 @@ brew install bash
 brew tap homebrew/versions
 brew install bash-completion2
 
+brew install zsh
+brew install zsh-completions
+
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
