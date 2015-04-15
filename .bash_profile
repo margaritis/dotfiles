@@ -76,6 +76,18 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 # Add dev virtualenv
 source ~/Envs/DevVirtualEnv/bin/activate;
 
+# Enable bash completion for pip
+# pip bash completion start
+_pip_completion()
+{
+    COMPREPLY=( $( COMP_WORDS="${COMP_WORDS[*]}" \
+                   COMP_CWORD=$COMP_CWORD \
+                   PIP_AUTO_COMPLETE=1 $1 ) )
+}
+complete -o default -F _pip_completion pip
+# pip bash completion end
+
+
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 # Profile currently not used
