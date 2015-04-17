@@ -95,3 +95,11 @@ complete -o default -F _pip_completion pip
 
 # RVM bash completion
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
+
+
+if [ -d "$HOME/Envs/DevVirtualEnv/lib/python2.7/site-packages/powerline" ]; then
+    powerline-daemon -q
+    POWERLINE_BASH_CONTINUATION=1
+    POWERLINE_BASH_SELECT=1
+    source /Users/breath/Envs/DevVirtualEnv/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+fi
