@@ -92,3 +92,6 @@ complete -o default -F _pip_completion pip
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 # Profile currently not used
 # source ~/.profile;
+
+# RVM bash completion
+[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
