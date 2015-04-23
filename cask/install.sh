@@ -19,12 +19,12 @@ apps=(
   google-chrome
   google-hangouts
   firefox
+  keka
   opera
   slack
   skype
   spotify
   appcleaner
-  hazel
   karabiner
   virtualbox
   vagrant
