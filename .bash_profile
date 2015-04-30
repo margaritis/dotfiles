@@ -87,6 +87,8 @@ _pip_completion()
 complete -o default -F _pip_completion pip
 # pip bash completion end
 
+#Git-flow bash completion
+source ~/init/git/git-flow-completion.sh
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
