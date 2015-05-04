@@ -11,6 +11,7 @@ packages=(
   generator-angular-fullstack
   generator-api-service
   tern
+  requirejs
 )
 
 echo "installing npm packages..."
