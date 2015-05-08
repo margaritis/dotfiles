@@ -637,31 +637,31 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 
 
-#############Experimental#############
-# Disable dimming of inactive panes
-defaults write com.googlecode.iterm2 SplitPaneDimmingAmount  -float 0
+# #############Experimental#############
+# # Disable dimming of inactive panes
+# defaults write com.googlecode.iterm2 SplitPaneDimmingAmount  -float 0
 
-# Do not show pane titles
-defaults write com.googlecode.iterm2 ShowPaneTitles -int 0
+# # Do not show pane titles
+# defaults write com.googlecode.iterm2 ShowPaneTitles -int 0
 
-# Hide the scrollbar
-defaults write com.googlecode.iterm2 HideScrollbar -int 1
+# # Hide the scrollbar
+# defaults write com.googlecode.iterm2 HideScrollbar -int 1
 
-# Hide tab
-defaults write com.googlecode.iterm2 HideTab -int 1
+# # Hide tab
+# defaults write com.googlecode.iterm2 HideTab -int 1
 
-# Do not highlight tab
-defaults write com.googlecode.iterm2 HighlightTabLabels -int 1
+# # Do not highlight tab
+# defaults write com.googlecode.iterm2 HighlightTabLabels -int 1
 
 
-# Various other goodies
-defaults write com.googlecode.iterm2 HotKeyTogglesWindow -int 1
-defaults write com.googlecode.iterm2 Hotkey -int 1
-defaults write com.googlecode.iterm2 HotkeyChar -int 46
-defaults write com.googlecode.iterm2 HotkeyCode -int 47
-defaults write com.googlecode.iterm2 HotkeyModifiers -int 1
-defaults write com.googlecode.iterm2 Control -int 1
-defaults write com.googlecode.iterm2 DimInactiveSplitPanes -int 0
+# # Various other goodies
+# defaults write com.googlecode.iterm2 HotKeyTogglesWindow -int 1
+# defaults write com.googlecode.iterm2 Hotkey -int 1
+# defaults write com.googlecode.iterm2 HotkeyChar -int 46
+# defaults write com.googlecode.iterm2 HotkeyCode -int 47
+# defaults write com.googlecode.iterm2 HotkeyModifiers -int 1
+# defaults write com.googlecode.iterm2 Control -int 1
+# defaults write com.googlecode.iterm2 DimInactiveSplitPanes -int 0
 
 
 ###############################################################################
