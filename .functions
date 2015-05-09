@@ -249,5 +249,7 @@ function updateShells(){
     if  ! grep -Fxq "/usr/local/bin/bash" /etc/shells ; then
         echo "/usr/local/bin/bash" | sudo tee -a /etc/shells > /dev/null
         chsh -s /usr/local/bin/bash
+    else
+    	chsh -s /usr/local/bin/bash
     fi
 }
