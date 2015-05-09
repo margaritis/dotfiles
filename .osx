@@ -821,15 +821,25 @@ fi
 ###############################################################################
 # MySQL Workbench
 ###############################################################################
-rm -r ~/Library/Application\ Support/MySQL/Workbench/connections.xml
-ln -s ~/Google\ Drive/Config/MySQL/connections.xml ~/Library/Application\ Support/MySQL/Workbench/connections.xml
+echo ""
+echo "Do you want to symlink MySQL Workbench connections to Google Drive?"
+read -r response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+    rm -r ~/Library/Application\ Support/MySQL/Workbench/connections.xml
+    ln -s ~/Google\ Drive/Config/MySQL/connections.xml ~/Library/Application\ Support/MySQL/Workbench/connections.xml
+fi
 
 
 ###############################################################################
 # Git config
 ###############################################################################
-rm -r ~/.extra
-ln -s ~/Google\ Drive/Config/Git/.extra ~/.extra
+echo ""
+echo "Do you want to symlink .extra to Google Drive?"
+read -r response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+    rm -r ~/.extra
+    ln -s ~/Google\ Drive/Config/Git/.extra ~/.extra
+fi
 
 
 ###############################################################################
@@ -837,9 +847,16 @@ ln -s ~/Google\ Drive/Config/Git/.extra ~/.extra
 ###############################################################################
 ln -s ~/Projects /Applications/MAMP/htdocs
 
+
 # Use MySQL
-rm -r /Applications/MAMP/db/mysql
-ln -s ~/Google\ Drive/Config/Mamp/mysql /Applications/MAMP/db/mysql
+echo ""
+echo "Do you want to symlink MAMP MySQL databases to Google Drive?"
+read -r response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+    rm -r /Applications/MAMP/db/mysql
+    ln -s ~/Google\ Drive/Config/Mamp/mysql /Applications/MAMP/db/mysql
+fi
+
 
 ###############################################################################
 # Transmission.app                                                            #
