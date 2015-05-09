@@ -783,8 +783,6 @@ defaults write com.operasoftware.OperaDeveloper PMPrintingExpandedStateForPrint2
 #Prior to running the .osx files it is recommended to install package control to Sublime.
 #Update the documentation to include this info
 
-# Install Sublime Text settings
-cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings 2> /dev/null
 
 # Set symlink for Sublime Text
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
@@ -811,6 +809,15 @@ else
     ln -s ~/Google\ Drive/Sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
 fi
 
+# Setup Sublime syncing (WIP)
+echo ""
+echo "Do you want to copy Sublime settings?"
+read -r response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+    # Install Sublime Text settings
+    cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings 2> /dev/null
+fi
+
 ###############################################################################
 # MySQL Workbench
 ###############################################################################
@@ -830,6 +837,7 @@ ln -s ~/Google\ Drive/Config/Git/.extra ~/.extra
 ###############################################################################
 ln -s ~/Projects /Applications/MAMP/htdocs
 
+# Use MySQL
 rm -r /Applications/MAMP/db/mysql
 ln -s ~/Google\ Drive/Config/Mamp/mysql /Applications/MAMP/db/mysql
 
