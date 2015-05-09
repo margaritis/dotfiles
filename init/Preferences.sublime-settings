@@ -79,8 +79,8 @@
     ],
     "tern_command":
     [
-        "/Users/breath/.nvm/versions/node/v0.12.2/bin/node",
-        "/Users/breath/.nvm/versions/node/v0.12.2/bin/tern"
+        "../../../.nvm/versions/node/v0.12.2/bin/node",
+        "../../../.nvm/versions/node/v0.12.2/bin/tern"
     ],
     "theme": "Cobalt2.sublime-theme",
     "translate_tabs_to_spaces": true,
