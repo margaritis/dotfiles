@@ -13,6 +13,7 @@
     ],
     "bold_folder_labels": true,
     "caret_style": "phase",
+    "close_windows_when_empty": true,
     "color_scheme": "Packages/User/SublimeLinter/Breath (SL).tmTheme",
     "command": "paste",
     "default_encoding": "UTF-8",
@@ -53,8 +54,10 @@
     "hot_exit": true,
     "ignored_packages":
     [
+        "SublimeCodeIntel",
         "Vintage",
-        "SublimeCodeIntel"
+        "Markdown",
+        "EditorConfig"
     ],
     "line_padding_bottom": 1,
     "line_padding_top": 1,
@@ -69,15 +72,15 @@
     "show_encoding": true,
     "show_full_path": true,
     "show_line_endings": true,
-    "tab_size": 2,
+    "tab_size": 4,
     "tern_argument_hints": true,
     "tern_arguments":
     [
     ],
     "tern_command":
     [
-        "/Users/breath/.nvm/versions/node/v0.12.0/bin/node",
-        "/Users/breath/.nvm/versions/node/v0.12.0/bin/tern"
+        "/Users/breath/.nvm/versions/node/v0.12.2/bin/node",
+        "/Users/breath/.nvm/versions/node/v0.12.2/bin/tern"
     ],
     "theme": "Cobalt2.sublime-theme",
     "translate_tabs_to_spaces": true,
