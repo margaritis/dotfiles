@@ -780,7 +780,7 @@ defaults write com.operasoftware.OperaDeveloper PMPrintingExpandedStateForPrint2
 # Sublime Text                                                                #
 ###############################################################################
 
-#Prior to running the .osx files it is recommended to install packate control to Sublime.
+#Prior to running the .osx files it is recommended to install package control to Sublime.
 #Update the documentation to include this info
 
 # Install Sublime Text settings
