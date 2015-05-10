@@ -52,6 +52,8 @@ alias caskupdate='for c in `brew cask list`; do ! brew cask info $c | grep -qF "
 
 alias pipupdate="pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs pip install -U"
 
+alias hideterm="/usr/libexec/PlistBuddy -c 'Add :LSUIElement bool true' /Applications/iTerm.app/Contents/Info.plist"
+
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
