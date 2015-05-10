@@ -48,7 +48,7 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update;pip install --upgrade pip;caskupdate;pipupdate'
 
-alias caskupdate='for c in `brew cask list`; do ! brew cask info $c | grep -qF "Not installed" || brew cask install $c; done'
+alias caskupdate='for c in `brew cask list`; do ! brew cask info $c | grep -qF "Not installed" || brew cask install $c; done;brew cask cleanup'
 
 alias pipupdate="pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs pip install -U"
 
