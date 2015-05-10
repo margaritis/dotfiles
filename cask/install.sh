@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# You can check available fonts here
+# https://github.com/caskroom/homebrew-fonts/tree/master/Casks
+
 # Apps
 apps=(
   teamviewer
