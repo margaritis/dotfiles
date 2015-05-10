@@ -2,6 +2,8 @@
 
 # Apps
 apps=(
+  teamviewer
+  google-drive
   alfred
   qlcolorcode
   coconutbattery
@@ -14,7 +16,6 @@ apps=(
   qlimagesize
   webpquicklook
   suspicious-package
-  google-drive
   dropbox
   google-chrome
   google-hangouts
@@ -34,7 +35,6 @@ apps=(
   shiori
   atom
   sublime-text3
-  teamviewer
   texmaker
   totalterminal
   yemuzip
