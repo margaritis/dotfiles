@@ -831,7 +831,7 @@ echo "Do you want to copy Sublime Package Control settings?"
 read -r response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
     # Install Sublime Text settings
-    cp -r init/Package Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package Control.sublime-settings 2> /dev/null
+    cp -r init/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings 2> /dev/null
 fi
 
 ###############################################################################
