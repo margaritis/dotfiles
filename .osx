@@ -540,7 +540,7 @@ defaults write com.apple.spotlight orderedItems -array \
     '{"enabled" = 1;"name" = "PDF";}' \
     '{"enabled" = 1;"name" = "FONTS";}' \
     '{"enabled" = 0;"name" = "DOCUMENTS";}' \
-    '{"enabled" = 0;"name" = "MESSAGES";}' \
+    '{"enabled" = 1;"name" = "MESSAGES";}' \
     '{"enabled" = 1;"name" = "CONTACT";}' \
     '{"enabled" = 0;"name" = "EVENT_TODO";}' \
     '{"enabled" = 0;"name" = "IMAGES";}' \
@@ -823,6 +823,15 @@ read -r response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
     # Install Sublime Text settings
     cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings 2> /dev/null
+fi
+
+# Setup Sublime packages
+echo ""
+echo "Do you want to copy Sublime Package Control settings?"
+read -r response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+    # Install Sublime Text settings
+    cp -r init/Package Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package Control.sublime-settings 2> /dev/null
 fi
 
 ###############################################################################
