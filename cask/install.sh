@@ -19,6 +19,7 @@ apps=(
   qlimagesize
   webpquicklook
   suspicious-package
+  hyperswitch
   dropbox
   google-chrome
   google-hangouts
