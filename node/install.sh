@@ -13,10 +13,10 @@ nvm install 0.12.2
 source ./node/npm.sh;
 
 nvm install 0.10.26
-nvm nvm reinstall-packages 0.12.2
+nvm reinstall-packages 0.12.2
 
 nvm install 0.10.24
-nvm nvm reinstall-packages 0.12.2
+nvm reinstall-packages 0.12.2
 
 nvm install iojs
 nvm use 0.12.2
