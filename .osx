@@ -859,6 +859,18 @@ fi
 
 
 ###############################################################################
+# AWS config
+###############################################################################
+echo ""
+echo "Do you want to symlink .aws config to Google Drive?"
+read -r response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+    rm -r ~/.aws
+    ln -s ~/Google\ Drive/Config/AWS/.aws ~/.aws
+fi
+
+
+###############################################################################
 # MAMP config
 ###############################################################################
 ln -s ~/Projects /Applications/MAMP/htdocs
