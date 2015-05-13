@@ -23,6 +23,7 @@
     "draw_white_space": "selection",
     "enable_tab_scrolling": true,
     "ensure_newline_at_eof_on_save": true,
+    "extract_sublime_package_ask_on_open": true,
     "fade_fold_buttons": true,
     "file_exclude_patterns":
     [
@@ -54,10 +55,9 @@
     "hot_exit": true,
     "ignored_packages":
     [
-        "SublimeCodeIntel",
         "Vintage",
-        "Markdown",
-        "EditorConfig"
+        "SublimeCodeIntel",
+        "Markdown"
     ],
     "line_padding_bottom": 1,
     "line_padding_top": 1,
@@ -79,8 +79,8 @@
     ],
     "tern_command":
     [
-        "../../../.nvm/versions/node/v0.12.2/bin/node",
-        "../../../.nvm/versions/node/v0.12.2/bin/tern"
+        "/usr/local/bin/node",
+        "/usr/local/bin/tern"
     ],
     "theme": "Cobalt2.sublime-theme",
     "translate_tabs_to_spaces": true,
