@@ -1,6 +1,9 @@
 # Margaritis’s dotfiles
 
-![Screenshot of my shell prompt](http://i.imgur.com/EkEtphC.png)
+![Screenshot of my shell prompt](https://cloud.githubusercontent.com/assets/5788810/7601274/b74051d8-f91c-11e4-9d4e-3d9ca579ae4e.png)
+
+![Screenshot of my shell prompt using Powerline](https://cloud.githubusercontent.com/assets/5788810/7601275/b98efc50-f91c-11e4-8e15-fc0d1aeedd0a.png)
+
 
 ## Installation
 
@@ -9,7 +12,7 @@
 You can clone the repository wherever you want. (I like to keep it in `~/Projects/dotfiles`, with `~/dotfiles` as a symlink.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
 ```bash
-git clone https://github.com/mathiasbynens/dotfiles.git && cd dotfiles && source bootstrap.sh
+git clone https://github.com/margaritis/dotfiles.git && cd dotfiles && source bootstrap.sh
 ```
 
 To update, `cd` into your local `dotfiles` repository and then:
@@ -29,7 +32,7 @@ set -- -f; source bootstrap.sh
 To install these dotfiles without Git:
 
 ```bash
-cd; curl -#L https://github.com/mathiasbynens/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,LICENSE-MIT.txt}
+cd; curl -#L https://github.com/margaritis/dotfiles/tarball/marga | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,LICENSE-MIT.txt}
 ```
 
 To update later on, just run that command again.
@@ -53,15 +56,15 @@ My `~/.extra` looks something like this:
 ```bash
 # Git credentials
 # Not in the repository, to prevent people from accidentally committing under my name
-GIT_AUTHOR_NAME="Mathias Bynens"
+GIT_AUTHOR_NAME="Konstantinos Margaritis"
 GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
 git config --global user.name "$GIT_AUTHOR_NAME"
-GIT_AUTHOR_EMAIL="mathias@mailinator.com"
+GIT_AUTHOR_EMAIL="kotsos.marga@gmail.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 ```
 
-You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/mathiasbynens/dotfiles/fork) instead, though.
+You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/margaritis/dotfiles/fork) instead, though.
 
 ### Sensible OS X defaults
 
@@ -73,7 +76,7 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 
 ### Install Homebrew formulae
 
-When setting up a new Mac, you may want to install some common [Homebrew](http://brew.sh/) formulae (after installing Homebrew, of course):
+When setting up a new Mac, you may want to install some common [Homebrew](http://brew.sh/) formulae (Homebrew installation is part of the brew.sh execution):
 
 ```bash
 ./brew.sh
@@ -82,13 +85,18 @@ When setting up a new Mac, you may want to install some common [Homebrew](http:/
 ## Feedback
 
 Suggestions/improvements
-[welcome](https://github.com/mathiasbynens/dotfiles/issues)!
+[welcome](https://github.com/margaritis/dotfiles/issues)!
 
 ## Author
 
-| [![twitter/mathias](http://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](http://twitter.com/mathias "Follow @mathias on Twitter") |
+| [![twitter/margaritis](https://www.gravatar.com/avatar/15a64213080e0ee13d02f0eab0f8819b?s=70)](http://twitter.com/margaritis "Follow @margaritis on Twitter") |
 |---|
-| [Mathias Bynens](https://mathiasbynens.be/) |
+| [Konstantinos Margaritis](https://margaritis.org/) |
+
+
+##
+
+***This repo is based on [Mathias Bynens](https://mathiasbynens.be/) excellent work which you can find [here](https://github.com/mathiasbynens/dotfiles) 
 
 ## Thanks to…
 
