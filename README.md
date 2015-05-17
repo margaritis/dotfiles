@@ -2,7 +2,7 @@
 
 ![Screenshot of my shell prompt (same with Mathias)](https://cloud.githubusercontent.com/assets/5788810/7670549/de98f0bc-fcb1-11e4-9e08-9171400c1d0e.png)
 
-![Screenshot of my shell prompt using Powerline](https://cloud.githubusercontent.com/assets/5788810/7601275/b98efc50-f91c-11e4-8e15-fc0d1aeedd0a.png)
+![Screenshot of my shell prompt using Powerline](https://cloud.githubusercontent.com/assets/5788810/7601274/b74051d8-f91c-11e4-9d4e-3d9ca579ae4e.png)
 
 
 ## Installation
