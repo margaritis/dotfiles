@@ -87,7 +87,7 @@ When setting up a new Mac, you may want to install some common [Homebrew](http:/
 Suggestions/improvements
 [welcome](https://github.com/margaritis/dotfiles/issues)!
 
-## Author
+## Author ***
 
 | [![twitter/margaritis](https://www.gravatar.com/avatar/15a64213080e0ee13d02f0eab0f8819b?s=70)](http://twitter.com/margaritis "Follow @margaritis on Twitter") |
 |---|
