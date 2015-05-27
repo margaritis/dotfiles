@@ -91,6 +91,7 @@ brew install ucspi-tcp # `tcpserver` etc.
 brew install xpdf
 brew install xz
 brew install rsync
+brew install freetds
 
 # Install other useful binaries.
 brew install ack
