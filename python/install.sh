@@ -16,3 +16,4 @@ export PIP_DOWNLOAD_CACHE=$HOME/Library/Caches/pip
 pip install awsebcli
 pip install powerline-status
 pip install codeintel
+pip install pyodbc
