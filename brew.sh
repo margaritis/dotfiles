@@ -117,7 +117,7 @@ brew install mongodb
 brew install z
 brew install git-flow
 brew install git-extras
-
+brew install composer
 
 #Install libraries for Software installation
 brew install caskroom/cask/brew-cask
