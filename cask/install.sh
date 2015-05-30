@@ -56,6 +56,8 @@ apps=(
   eclipse-ide
   github
   java
+  java7
+  java6
   sourcetree
   flashlight
   fluid
