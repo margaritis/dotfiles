@@ -1,5 +1,5 @@
 # Add `~/bin` to the `$PATH`
-export PATH="/usr/local/sbin:$HOME/bin:$HOME/.rvm/bin:$PATH";
+export PATH="/usr/local/sbin:$HOME/bin:$HOME/.rvm/bin:$HOME/.jenv/bin:$PATH";
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -104,4 +104,9 @@ if [ -d "$HOME/Envs/DevVirtualEnv/lib/python2.7/site-packages/powerline" ]; then
     POWERLINE_BASH_CONTINUATION=1
     POWERLINE_BASH_SELECT=1
     source $HOME/Envs/DevVirtualEnv/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+fi
+
+# Load jenv
+if which jenv > /dev/null; then
+    eval "$(jenv init -)";
 fi
