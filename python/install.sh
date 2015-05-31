@@ -3,6 +3,7 @@
 
 brew install python
 brew install python3
+brew install autoenv
 pip install virtualenv
 virtualenv ~/Envs/DevVirtualEnv
 source ~/Envs/DevVirtualEnv/bin/activate
