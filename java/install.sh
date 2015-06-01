@@ -3,9 +3,10 @@
 brew install jenv
 brew install maven
 
-# Configure jenv
-#
+export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+
+# Configure jenv
 jenv enable-plugin export
 jenv enable-plugin ant
 jenv enable-plugin scala
