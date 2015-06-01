@@ -63,6 +63,67 @@
     "line_padding_top": 1,
     "match_brackets": true,
     "match_brackets_angle": true,
+    "maven_menu_commands":
+    [
+        {
+            "args":
+            {
+                "goals":
+                [
+                    "test"
+                ],
+                "paths":
+                [
+                ]
+            },
+            "caption": "Maven: Run test",
+            "command": "maven"
+        },
+        {
+            "args":
+            {
+                "goals":
+                [
+                    "install"
+                ],
+                "paths":
+                [
+                ]
+            },
+            "caption": "Maven: Run install",
+            "command": "maven"
+        },
+        {
+            "args":
+            {
+                "goals":
+                [
+                    "clean",
+                    "test"
+                ],
+                "paths":
+                [
+                ]
+            },
+            "caption": "Maven: Run clean test",
+            "command": "maven"
+        },
+        {
+            "args":
+            {
+                "goals":
+                [
+                    "clean",
+                    "install"
+                ],
+                "paths":
+                [
+                ]
+            },
+            "caption": "Maven: Run clean install",
+            "command": "maven"
+        }
+    ],
     "preview_on_click": true,
     "remember_open_files": true,
     "rulers":
