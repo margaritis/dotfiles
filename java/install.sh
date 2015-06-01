@@ -13,3 +13,13 @@ jenv enable-plugin scala
 jenv enable-plugin gradle
 jenv enable-plugin groovy
 jenv enable-plugin maven
+
+addJavaToJenv /System/Library/Java/JavaVirtualMachines/
+addJavaToJenv /Library/Java/JavaVirtualMachines/
+
+# Add Java versions to jenv
+function addJavaToJenv(){
+    for d in $1* ; do
+        jenv add "$d/Contents/Home/"
+    done
+}
