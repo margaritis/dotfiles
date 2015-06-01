@@ -23,3 +23,6 @@ function addJavaToJenv(){
         jenv add "$d/Contents/Home/"
     done
 }
+
+jenv global 1.8.0.45
+jenv shell 1.8.0.45
