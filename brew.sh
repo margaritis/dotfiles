@@ -145,5 +145,8 @@ brew install heroku-toolbelt
 # Install MAC OS apps
 source ./cask/install.sh;
 
+# Install Jenv
+source ./java/install.sh
+
 # Remove outdated versions from the cellar.
 brew cleanup
