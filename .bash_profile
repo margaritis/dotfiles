@@ -73,8 +73,11 @@ export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache;
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
-# Add dev virtualenv
-source ~/Envs/DevVirtualEnv/bin/activate;
+# Add virtualenvwrapper for managing virtualenv
+source /usr/local/bin/virtualenvwrapper.sh
+
+# Set venv as working virtual env
+workon venv
 
 # Enable bash completion for pip
 # pip bash completion start
@@ -99,11 +102,11 @@ source ~/init/git/git-flow-completion.sh
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 
 # Powerline feature for Bash
-if [ -d "$HOME/Envs/DevVirtualEnv/lib/python2.7/site-packages/powerline" ]; then
+if [ -d "$HOME/.virtualenvs/venv/lib/python2.7/site-packages/powerline" ]; then
     powerline-daemon -q
     POWERLINE_BASH_CONTINUATION=1
     POWERLINE_BASH_SELECT=1
-    source $HOME/Envs/DevVirtualEnv/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+    source $HOME/.virtualenvs/venv/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 fi
 
 # Load jenv
