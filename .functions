@@ -253,3 +253,10 @@ function updateShells(){
     	chsh -s /usr/local/bin/bash
     fi
 }
+
+# Add Java versions to jenv
+function addJavaToJenv(){
+    for d in $1* ; do
+        jenv add "$d/Contents/Home/"
+    done
+}
