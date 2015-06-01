@@ -55,7 +55,7 @@ if [[ -s $(brew --prefix nvm)/nvm.sh ]]; then
   source $(brew --prefix nvm)/nvm.sh
 
   # Enable bash completion
-  [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
+  [[ -r $NVM_DIR/bash_completion ]] && source $NVM_DIR/bash_completion
 
   # Set NVM to use node on start up (non interactive mode can use nvm).
   # In case you are not using default node for your shell uncomment
@@ -63,8 +63,12 @@ if [[ -s $(brew --prefix nvm)/nvm.sh ]]; then
   # nvm use node
 fi
 
+
+# Add npm auto complete
+source ~/.nvm/versions/node/`nvm current`/lib/node_modules/npm/lib/utils/completion.sh
+
 # Add z
-. `brew --prefix`/etc/profile.d/z.sh
+source `brew --prefix`/etc/profile.d/z.sh
 
 # pip should only run if there is a virtualenv currently activated
 export PIP_REQUIRE_VIRTUALENV=true;
@@ -94,12 +98,12 @@ complete -o default -F _pip_completion pip
 source ~/init/git/git-flow-completion.sh
 
 # Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 # Profile currently not used
 # source ~/.profile;
 
 # RVM bash completion
-[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
+[[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
 
 # Powerline feature for Bash
 if [ -d "$HOME/.virtualenvs/venv/lib/python2.7/site-packages/powerline" ]; then
