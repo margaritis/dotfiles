@@ -68,6 +68,7 @@ apps=(
   font-courier-prime
   font-source-code-pro
   font-source-code-pro-for-powerline
+  soundnode
   # slate
   # bee (if available)
   # Majic (attlasian)
