@@ -25,3 +25,4 @@ nvm alias default 0.12.2
 ln -s `which node` /usr/local/bin/node
 ln -s `which jscs` /usr/local/bin/jscs
 ln -s `which tern` /usr/local/bin/tern
+ln -s `which grunt` /usr/local/bin/grunt
