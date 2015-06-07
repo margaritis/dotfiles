@@ -2,7 +2,6 @@
 
 brew install jenv
 brew install mvnvm
-brew install maven
 
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
