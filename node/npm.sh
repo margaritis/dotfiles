@@ -12,6 +12,7 @@ packages=(
   generator-api-service
   tern
   requirejs
+  yaml2json
 )
 
 echo "installing npm packages..."
