@@ -8,6 +8,9 @@
   ],
   "plugins": {
     "node": {},
+    "doc_comment": {
+      "fullDocs": true
+    },
     "complete_strings": {},
     "requirejs": {
       "baseURL": "./libs",
