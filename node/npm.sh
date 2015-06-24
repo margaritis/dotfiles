@@ -13,6 +13,7 @@ packages=(
   tern
   requirejs
   yaml2json
+  node-inspector
 )
 
 echo "installing npm packages..."
