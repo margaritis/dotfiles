@@ -119,6 +119,10 @@ brew install git-flow
 brew install git-extras
 brew install composer
 
+#install Synergy dependencies
+brew install cmake
+brew install qt
+
 #Install libraries for Software installation
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
