@@ -105,12 +105,14 @@ source ~/init/git/git-flow-completion.sh
 # RVM bash completion
 [[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
 
-# Powerline feature for Bash
-if [ -d "$HOME/.virtualenvs/venv/lib/python2.7/site-packages/powerline" ]; then
-    powerline-daemon -q
-    POWERLINE_BASH_CONTINUATION=1
-    POWERLINE_BASH_SELECT=1
-    source $HOME/.virtualenvs/venv/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+if [ "$TERM_PROGRAM" == "iTerm.app" ]; then
+    # Powerline feature for Bash
+    if [ -d "$HOME/.virtualenvs/venv/lib/python2.7/site-packages/powerline" ]; then
+        powerline-daemon -q
+        POWERLINE_BASH_CONTINUATION=1
+        POWERLINE_BASH_SELECT=1
+        source $HOME/.virtualenvs/venv/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+    fi
 fi
 
 # Load jenv
