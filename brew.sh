@@ -130,9 +130,6 @@ source ./node/install.sh;
 # Install AWS CLI
 brew install awscli
 
-# Install Docker
-source ./docker/install.sh;
-
 # Install RVM and Ruby
 source ./ruby/install.sh;
 
@@ -144,6 +141,9 @@ brew install heroku-toolbelt
 
 # Install MAC OS apps
 source ./cask/install.sh;
+
+# Install Docker
+source ./docker/install.sh;
 
 # Install Jenv
 source ./java/install.sh
