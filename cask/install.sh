@@ -69,6 +69,7 @@ apps=(
   font-source-code-pro
   font-source-code-pro-for-powerline
   soundnode
+  tunnelblick
   # slate
   # bee (if available)
   # Majic (attlasian)
