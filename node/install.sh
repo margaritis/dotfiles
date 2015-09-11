@@ -27,3 +27,4 @@ ln -s `which jscs` /usr/local/bin/jscs
 ln -s `which tern` /usr/local/bin/tern
 ln -s `which grunt` /usr/local/bin/grunt
 ln -s `which bower` /usr/local/bin/bower
+ln -s `which r.js` /usr/local/bin/r.js
