@@ -94,6 +94,9 @@ _pip_completion()
 complete -o default -F _pip_completion pip
 # pip bash completion end
 
+# AWS bash completion
+complete -C aws_completer aws
+
 #Git-flow bash completion
 source ~/init/git/git-flow-completion.sh
 
