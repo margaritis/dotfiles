@@ -122,3 +122,7 @@ fi
 if which jenv > /dev/null; then
     eval "$(jenv init -)";
 fi
+
+if [ -f ~/init/maven/m2 ]; then
+  . ~/init/maven/m2
+fi
