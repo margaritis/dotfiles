@@ -65,9 +65,13 @@ alias pipupdate="pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs pi
 # Add iTerm as a background process
 alias addiTerm="/usr/libexec/PlistBuddy -c 'Add :LSUIElement bool true' /Applications/iTerm.app/Contents/Info.plist"
 
+# Delete iTerm item
+alias deleteiTerm="/usr/libexec/PlistBuddy -c 'Delete :LSUIElement' /Applications/iTerm.app/Contents/Info.plist"
+
 # Set iTerm as a background process in case of an update
 alias setiTerm="/usr/libexec/PlistBuddy -c 'Set :LSUIElement bool true' /Applications/iTerm.app/Contents/Info.plist"
 
+alias iBack="deleteiTerm && addiTerm"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
