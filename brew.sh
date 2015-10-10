@@ -152,5 +152,8 @@ source ./docker/install.sh;
 # Install Jenv
 source ./java/install.sh
 
+# Install Jenv
+source ./sonar/install.sh
+
 # Remove outdated versions from the cellar.
 brew cleanup
