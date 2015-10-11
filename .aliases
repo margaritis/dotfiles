@@ -28,9 +28,9 @@ alias v.lssitepackages='lssitepackages'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
-	colorflag="--color"
+    colorflag="--color"
 else # OS X `ls`
-	colorflag="-G"
+    colorflag="-G"
 fi
 
 # List all files colorized in long format
@@ -71,7 +71,7 @@ alias deleteiTerm="/usr/libexec/PlistBuddy -c 'Delete :LSUIElement' /Application
 # Set iTerm as a background process in case of an update
 alias setiTerm="/usr/libexec/PlistBuddy -c 'Set :LSUIElement bool true' /Applications/iTerm.app/Contents/Info.plist"
 
-alias iBack="deleteiTerm && addiTerm"
+alias iBack="deleteiTerm > /dev/null; addiTerm"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -150,7 +150,7 @@ alias mg="mongod --config /usr/local/etc/mongod.conf"
 
 # One of @janmoesen’s ProTip™s
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
-	alias "$method"="lwp-request -m '$method'"
+    alias "$method"="lwp-request -m '$method'"
 done
 
 # Make Grunt print stack traces by default
