@@ -28,6 +28,7 @@ nvm alias default 0.12.6
 
 ln -s `which node` /usr/local/bin/node
 ln -s `which jscs` /usr/local/bin/jscs
+ln -s `which jshint` /usr/local/bin/jshint
 ln -s `which tern` /usr/local/bin/tern
 ln -s `which grunt` /usr/local/bin/grunt
 ln -s `which bower` /usr/local/bin/bower
