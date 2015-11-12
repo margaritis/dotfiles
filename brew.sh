@@ -118,6 +118,8 @@ brew install z
 brew install git-flow
 brew install git-extras
 brew install composer
+brew install graphviz
+brew install pygtk
 
 #install Synergy dependencies
 brew install cmake
