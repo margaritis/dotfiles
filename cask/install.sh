@@ -18,7 +18,6 @@ apps=(
   betterzipql
   qlimagesize
   webpquicklook
-  suspicious-package
   hyperswitch
   dropbox
   google-chrome
@@ -70,6 +69,7 @@ apps=(
   font-source-code-pro-for-powerline
   soundnode
   tunnelblick
+  # suspicious-package
   # slate
   # bee (if available)
   # Majic (attlasian)
