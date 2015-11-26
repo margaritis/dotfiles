@@ -2,6 +2,8 @@
 
 # Npm packages
 packages=(
+  nsp
+  eslint
   jshint
   jscs
   jsxhint
