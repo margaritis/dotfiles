@@ -30,9 +30,6 @@ apps=(
   spotify
   appcleaner
   karabiner
-  virtualbox
-  vagrant
-  vagrant-manager
   flash
   iterm2
   shiori
@@ -53,7 +50,7 @@ apps=(
   firefoxdeveloperedition
   cheatsheet
   eclipse-ide
-  github
+  github-desktop
   java
   java7
   java6
@@ -69,6 +66,9 @@ apps=(
   font-source-code-pro-for-powerline
   soundnode
   tunnelblick
+  # virtualbox
+  # vagrant
+  # vagrant-manager
   # suspicious-package
   # slate
   # bee (if available)
