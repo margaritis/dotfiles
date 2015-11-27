@@ -14,7 +14,6 @@
     "bold_folder_labels": true,
     "caret_style": "phase",
     "close_windows_when_empty": true,
-    "color_scheme": "Packages/User/SublimeLinter/Breath (SL).tmTheme",
     "command": "paste",
     "default_encoding": "UTF-8",
     "default_line_ending": "unix",
