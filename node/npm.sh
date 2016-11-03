@@ -26,6 +26,10 @@ packages=(
   karma-cli
   phonegap
   babel
+  depcheck
+  jade-to-handlebars
+  sass-lint
+  pug-lint
 )
 
 echo "installing npm packages..."
