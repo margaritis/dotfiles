@@ -126,3 +126,7 @@ fi
 if [ -f ~/init/maven/m2 ]; then
   . ~/init/maven/m2
 fi
+
+hash grunt >/dev/null 2>&1 && {
+    eval "$(grunt --completion=bash)"
+}
