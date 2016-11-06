@@ -15,7 +15,6 @@ source ~/.phpbrew/bashrc
 phpbrew install 5.6.0
 phpbrew install 5.5.17
 phpbrew install 5.4.33
-phpbrew install 5.3.29
 
 phpbrew use php-5.6.0
 
@@ -23,3 +22,5 @@ brew install virtphp
 virtphp create dev
 
 source ~/.virtphp/envs/dev/bin/activate
+
+# http://uk1.php.net/get/php-5.4.43.tar.bz2/from/a/mirror
