@@ -130,3 +130,5 @@ fi
 hash grunt >/dev/null 2>&1 && {
     eval "$(grunt --completion=bash)"
 }
+
+source ~/.phpbrew/bashrc
