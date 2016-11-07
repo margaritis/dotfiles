@@ -64,8 +64,8 @@ apps=(
   font-courier-prime
   font-source-code-pro
   font-source-code-pro-for-powerline
-  soundnode
   expressvpn
+  # soundnode
   # virtualbox
   # tunnelblick
   # vagrant
