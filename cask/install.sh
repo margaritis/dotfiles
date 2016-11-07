@@ -21,6 +21,7 @@ apps=(
   hyperswitch
   dropbox
   google-chrome
+  google-chrome-canary
   google-hangouts
   firefox
   keka
@@ -40,13 +41,12 @@ apps=(
   yemuzip
   jeromelebel-mongohub
   mysqlworkbench
+  sequel-pro
   mamp
   cyberduck
   transmission
   dash
-  mailbox
   vlc
-  cloudup
   firefoxdeveloperedition
   cheatsheet
   eclipse-ide
@@ -65,8 +65,9 @@ apps=(
   font-source-code-pro
   font-source-code-pro-for-powerline
   soundnode
-  tunnelblick
+  expressvpn
   # virtualbox
+  # tunnelblick
   # vagrant
   # vagrant-manager
   # suspicious-package
