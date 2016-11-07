@@ -20,12 +20,11 @@ fi
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
+brew upgrade
 
-# Install GNU core utilities (those that come with OS X are outdated).
+# Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
-sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils
@@ -43,6 +42,9 @@ brew install bash-completion2
 brew install zsh
 brew install zsh-completions
 
+# Switch to using brew-installed bash as default shell
+updateShells()
+
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
@@ -52,12 +54,12 @@ brew install wget --with-iri
 # brew install ringojs
 # brew install narwhal
 
-# Install more recent versions of some OS X tools.
+# Install more recent versions of some macOS tools.
 brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh --with-brewed-openssl --with-keychain-support
 brew install homebrew/dupes/screen
-brew install homebrew/php/php55 --with-gmp
+brew install homebrew/php/php56 --with-gmp
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -109,7 +111,9 @@ brew install rename
 brew install rhino
 brew install speedtest_cli
 brew install ssh-copy-id
+brew install testssl
 brew install tree
+brew install vbindiff
 brew install webkit2png
 brew install zopfli
 brew install ansible
