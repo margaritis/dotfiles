@@ -34,3 +34,5 @@ export GREP_OPTIONS='--color=auto';
 
 #Increase Sonar runner Java heap size
 export SONAR_RUNNER_OPTS="-Xmx512m -XX:MaxPermSize=512m"
+
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications --caskroom=/etc/Caskroom"
