@@ -110,11 +110,11 @@ source ~/init/git/git-flow-completion.sh
 
 if [ "$TERM_PROGRAM" == "iTerm.app" ]; then
     # Powerline feature for Bash
-    if [ -d "$HOME/.virtualenvs/venv/lib/python2.7/site-packages/powerline" ]; then
+    if [ -d "$VIRTUAL_ENV/lib/python3.6/site-packages/powerline" ]; then
         powerline-daemon -q
         POWERLINE_BASH_CONTINUATION=1
         POWERLINE_BASH_SELECT=1
-        source $HOME/.virtualenvs/venv/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+        source $HOME/.virtualenvs/venv/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh
     fi
 fi
 
