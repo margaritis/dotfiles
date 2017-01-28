@@ -43,7 +43,8 @@ brew install zsh
 brew install zsh-completions
 
 # Switch to using brew-installed bash as default shell
-updateShells()
+source .functions
+updateShells
 
 # Install `wget` with IRI support.
 brew install wget --with-iri
@@ -124,6 +125,7 @@ brew install git-extras
 brew install composer
 brew install graphviz
 brew install pygtk
+brew install terraform
 
 #install Synergy dependencies
 brew install cmake
@@ -133,6 +135,7 @@ brew install qt
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 brew tap caskroom/fonts
+brew install brew-cask-completion
 
 # Node and io.js manager
 source ./node/install.sh;
@@ -146,8 +149,7 @@ source ./ruby/install.sh;
 # Install python, pip and virtualenv
 source ./python/install.sh;
 
-# Heroku Toolbelt
-brew install heroku-toolbelt
+source ./php/install.sh;
 
 # Install MAC OS apps
 source ./cask/install.sh;
@@ -160,6 +162,9 @@ source ./java/install.sh
 
 # Install Jenv
 source ./sonar/install.sh
+
+# Heroku Toolbelt
+brew install heroku-toolbelt
 
 # Remove outdated versions from the cellar.
 brew cleanup
