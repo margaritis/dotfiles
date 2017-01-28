@@ -12,11 +12,13 @@ phpbrew init
 
 source ~/.phpbrew/bashrc
 
-phpbrew install 5.6.0
-phpbrew install 5.5.17
-phpbrew install 5.4.33
+phpbrew install 7.1.1
+phpbrew install 7.0.15
+phpbrew install 5.6.30
+phpbrew install 5.5.38
+phpbrew install 5.4.45
 
-phpbrew use php-5.6.0
+phpbrew use php-5.6.30
 
 brew install virtphp
 virtphp create dev
