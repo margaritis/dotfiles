@@ -9,7 +9,6 @@ apps=(
   google-drive
   alfred
   qlcolorcode
-  coconutbattery
   qlstephen
   qlmarkdown
   quicklook-json
@@ -24,6 +23,7 @@ apps=(
   google-chrome-canary
   google-hangouts
   firefox
+  firefoxdeveloperedition
   keka
   opera
   slack
@@ -35,7 +35,8 @@ apps=(
   iterm2
   shiori
   atom
-  sublime-text3
+  sublime-text
+  visual-studio-code
   texmaker
   totalterminal
   yemuzip
@@ -47,7 +48,6 @@ apps=(
   transmission
   dash
   vlc
-  firefoxdeveloperedition
   cheatsheet
   eclipse-ide
   github-desktop
@@ -60,11 +60,10 @@ apps=(
   spectacle
   font-inconsolata
   font-anonymous-pro
-  font-anonymous-pro-for-powerline
+  font-anonymice-powerline
   font-courier-prime
   font-source-code-pro
   font-source-code-pro-for-powerline
-  expressvpn
   # soundnode
   # virtualbox
   # tunnelblick
