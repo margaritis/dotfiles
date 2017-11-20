@@ -4,13 +4,14 @@
 brew install python
 brew install python3
 brew install autoenv
-pip install --upgrade pip
-pip install --upgrade setuptools
-pip install virtualenv
-pip install virtualenvwrapper
+pip3 install --upgrade pip
+pip3 install --upgrade setuptools
+pip3 install virtualenv
+pip3 install virtualenvwrapper
 mkdir ~/.virtualenvs
 
 export WORKON_HOME=~/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh
 # mkvirtualenv venv
 mkvirtualenv --python=`which python3` venv
