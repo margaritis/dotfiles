@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 brew install automake autoconf pcre bison re2c mhash libtool icu4c gettext jpeg openssl libxml2 mcrypt gmp libevent
 brew link icu4c
 brew link --force openssl

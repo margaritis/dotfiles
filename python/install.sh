@@ -10,6 +10,7 @@ pip install virtualenv
 pip install virtualenvwrapper
 mkdir ~/.virtualenvs
 
+export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 # mkvirtualenv venv
 mkvirtualenv --python=`which python3` venv
