@@ -6,7 +6,8 @@
 # Apps
 apps=(
   teamviewer
-  google-drive
+  google-drive-file-stream
+  google-backup-and-sync
   alfred
   qlcolorcode
   qlstephen
@@ -27,18 +28,19 @@ apps=(
   keka
   opera
   slack
+  hipchat
+  gitter
   skype
   spotify
   appcleaner
   karabiner
-  flash
+  flash-player
   iterm2
   shiori
   atom
   sublime-text
   visual-studio-code
   texmaker
-  totalterminal
   yemuzip
   jeromelebel-mongohub
   mysqlworkbench
@@ -50,14 +52,16 @@ apps=(
   vlc
   cheatsheet
   eclipse-ide
-  github-desktop
+  github
   java
-  java7
+  java8
+  #java7
   java6
   sourcetree
   flashlight
   fluid
   spectacle
+  xquartz
   font-inconsolata
   font-anonymous-pro
   font-anonymice-powerline

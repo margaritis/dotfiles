@@ -67,7 +67,6 @@ brew install woff2
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew install aircrack-ng
-brew install bfg
 brew install binutils
 brew install binwalk
 brew install cifer
@@ -88,7 +87,6 @@ brew install tcpflow
 brew install tcpreplay
 brew install tcptrace
 brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
 brew install xz
 brew install rsync
 brew install freetds
@@ -130,7 +128,7 @@ brew install cmake
 brew install qt
 
 #Install libraries for Software installation
-brew install caskroom/cask/brew-cask
+brew tap caskroom/cask
 brew tap caskroom/versions
 brew tap caskroom/fonts
 brew install brew-cask-completion
@@ -163,6 +161,9 @@ source ./sonar/install.sh
 
 # Heroku Toolbelt
 brew install heroku-toolbelt
+
+brew install bfg
+brew install xpdf
 
 # Remove outdated versions from the cellar.
 brew cleanup
