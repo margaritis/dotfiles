@@ -38,3 +38,7 @@ export SONAR_RUNNER_OPTS="-Xmx512m -XX:MaxPermSize=512m"
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications --caskroom=/etc/Caskroom"
 
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+
+# Avoid issues with `gpg` as installed via Homebrew.
+# https://stackoverflow.com/a/42265848/96656
+export GPG_TTY=$(tty);
