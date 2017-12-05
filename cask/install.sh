@@ -61,6 +61,7 @@ apps=(
   flashlight
   fluid
   spectacle
+  docker
   xquartz
   font-inconsolata
   font-anonymous-pro
