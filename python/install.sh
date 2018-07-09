@@ -6,6 +6,7 @@ brew install python3
 brew install autoenv
 pip3 install --upgrade pip
 pip3 install --upgrade setuptools
+pip3 install --upgrade wheel
 pip3 install virtualenv
 pip3 install virtualenvwrapper
 mkdir ~/.virtualenvs
@@ -22,8 +23,8 @@ export PIP_REQUIRE_VIRTUALENV=true
 # cache pip-installed packages to avoid re-downloading
 export PIP_DOWNLOAD_CACHE=$HOME/Library/Caches/pip
 
-pip install awsebcli
-pip install powerline-status
+pip3 install awsebcli
+pip3 install powerline-status
 # Codeintel issue with python3.
 # pip install codeintel
-pip install pyodbc
+pip3 install pyodbc

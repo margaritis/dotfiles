@@ -22,7 +22,10 @@ phpbrew install 5.4.45 +default +mysql +fpm +openssl=`brew --prefix openssl`
 
 phpbrew use php-5.6.30
 
-brew install virtphp
+#brew install virtphp
+wget -P /usr/bin/virtphp https://github.com/virtphp/virtphp/releases/download/v0.5.2-alpha/virtphp.phar
+chmod +x virtphp
+mv virtphp $HOME/bin/virtphp
 virtphp create dev
 
 source ~/.virtphp/envs/dev/bin/activate

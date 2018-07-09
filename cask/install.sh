@@ -15,7 +15,7 @@ apps=(
   quicklook-json
   qlprettypatch
   quicklook-csv
-  betterzipql
+  #betterzipql
   qlimagesize
   webpquicklook
   hyperswitch
@@ -24,7 +24,7 @@ apps=(
   google-chrome-canary
   google-hangouts
   firefox
-  firefoxdeveloperedition
+  firefox-developer-edition
   keka
   opera
   slack
@@ -58,7 +58,7 @@ apps=(
   #java7
   java6
   sourcetree
-  flashlight
+  #flashlight
   fluid
   spectacle
   docker
@@ -70,10 +70,10 @@ apps=(
   font-source-code-pro
   font-source-code-pro-for-powerline
   # soundnode
-  # virtualbox
+  virtualbox
   # tunnelblick
-  # vagrant
-  # vagrant-manager
+  vagrant
+  vagrant-manager
   # suspicious-package
   # slate
   # bee (if available)
@@ -84,3 +84,5 @@ apps=(
 # Default is: /Users/$user/Applications
 echo "installing apps..."
 brew cask install --appdir="/Applications" ${apps[@]}
+
+brew cask cleanup

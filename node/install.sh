@@ -13,29 +13,17 @@ export NVM_DIR=~/.nvm;
 nvm install lts/argon
 source ./node/npm.sh;
 
-nvm install 0.10.39
-nvm reinstall-packages lts/argon
-
-nvm install 0.10.41
-nvm reinstall-packages lts/argon
-
-nvm install 0.12.6
-nvm reinstall-packages lts/argon
-
-nvm install 0.12.9
-nvm reinstall-packages lts/argon
-
-nvm install 6.2.2
-nvm reinstall-packages lts/argon
-
-nvm install 6.7.0
-nvm reinstall-packages lts/argon
-
 nvm install lts/boron
 nvm reinstall-packages lts/argon
 
-nvm use lts/boron
-nvm alias default lts/boron
+nvm install lts/carbon
+nvm reinstall-packages lts/argon
+
+nvm install lts/dubnium
+nvm reinstall-packages lts/argon
+
+nvm use lts/carbon
+nvm alias default lts/carbon
 
 ln -sf `which node` /usr/local/bin/node
 ln -sf `which jscs` /usr/local/bin/jscs
