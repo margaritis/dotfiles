@@ -2,32 +2,32 @@
 
 # Npm packages
 packages=(
-  nsp
+  #nsp
   eslint
   jshint
-  jscs
-  jsxhint
+  #jscs
+  #jsxhint
   grunt-cli
-  bower
+  #bower
   yo
   generator-angular-fullstack
   generator-api-service
   tern
-  requirejs
+  #requirejs
   yaml2json
   node-inspector
   gulp
-  browserify
+  #browserify
   pm2
   mocha
-  forever
-  forever-service
-  jade
+  #forever
+  #forever-service
+  pug
   karma-cli
-  phonegap
-  babel
+  #phonegap
+  babel-cli
   depcheck
-  jade-to-handlebars
+  #jade-to-handlebars
   sass-lint
   pug-lint
 )
