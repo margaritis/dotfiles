@@ -15,7 +15,7 @@ packages=(
   tern
   #requirejs
   yaml2json
-  node-inspector
+  # node-inspector
   gulp
   #browserify
   pm2
