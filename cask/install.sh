@@ -69,6 +69,7 @@ apps=(
   font-courier-prime
   font-source-code-pro
   font-source-code-pro-for-powerline
+  gas-mask
   # soundnode
   virtualbox
   # tunnelblick

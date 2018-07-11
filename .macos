@@ -948,6 +948,16 @@ fi
 
 
 ###############################################################################
+# HOSTs config
+###############################################################################
+echo ""
+echo "Do you want to symlink hosts config to Google Drive?"
+read -r response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+    ln -s ~/Google\ Drive/Config/hosts/extra_hosts.hst ~/Library/Gas\ Mask/Local/extra_hosts.hst
+fi
+
+###############################################################################
 # MAMP config
 ###############################################################################
 ln -s ~/Projects /Applications/MAMP/htdocs
