@@ -14,11 +14,11 @@ phpbrew init
 
 source ~/.phpbrew/bashrc
 
-phpbrew install 7.1.1 +default +mysql +fpm +openssl=`brew --prefix openssl`
-phpbrew install 7.0.15 +default +mysql +fpm +openssl=`brew --prefix openssl`
-phpbrew install 5.6.30 +default +mysql +fpm +openssl=`brew --prefix openssl`
-phpbrew install 5.5.38 +default +mysql +fpm +openssl=`brew --prefix openssl`
-phpbrew install 5.4.45 +default +mysql +fpm +openssl=`brew --prefix openssl`
+phpbrew install -j $(sysctl -n hw.physicalcpu) 7.1.1 +default +mysql +fpm +openssl=`brew --prefix openssl`
+phpbrew install -j $(sysctl -n hw.physicalcpu) 7.0.15 +default +mysql +fpm +openssl=`brew --prefix openssl`
+phpbrew install -j $(sysctl -n hw.physicalcpu) 5.6.30 +default +mysql +fpm +openssl=`brew --prefix openssl`
+phpbrew install -j $(sysctl -n hw.physicalcpu) 5.5.38 +default +mysql +fpm +openssl=`brew --prefix openssl`
+phpbrew install -j $(sysctl -n hw.physicalcpu) 5.4.45 +default +mysql +fpm +openssl=`brew --prefix openssl`
 
 phpbrew use php-5.6.30
 
