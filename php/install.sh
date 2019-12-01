@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-brew install automake autoconf pcre bison re2c mhash libtool icu4c gettext jpeg openssl libxml2 mcrypt gmp libevent
+brew install automake autoconf pcre bison re2c mhash libtool icu4c gettext jpeg openssl libxml2 mcrypt gmp libevent libiconv bzip2 libzip curl
 brew link icu4c
 brew link --force openssl
 brew link --force libxml2
@@ -14,16 +14,27 @@ phpbrew init
 
 source ~/.phpbrew/bashrc
 
-phpbrew install -j $(sysctl -n hw.physicalcpu) 7.1.1 +default +mysql +fpm +openssl=`brew --prefix openssl`
-phpbrew install -j $(sysctl -n hw.physicalcpu) 7.0.15 +default +mysql +fpm +openssl=`brew --prefix openssl`
-phpbrew install -j $(sysctl -n hw.physicalcpu) 5.6.30 +default +mysql +fpm +openssl=`brew --prefix openssl`
-phpbrew install -j $(sysctl -n hw.physicalcpu) 5.5.38 +default +mysql +fpm +openssl=`brew --prefix openssl`
-phpbrew install -j $(sysctl -n hw.physicalcpu) 5.4.45 +default +mysql +fpm +openssl=`brew --prefix openssl`
+# #
+# if ! phpbrew  list | grep "7.3.11"; then
+#     phpbrew install --mirror=https://www.php.net -j $(sysctl -n hw.ncpu) 7.3.11 +default +mysql +fpm +openssl=`brew --prefix openssl` +iconv="$(brew --prefix libiconv)" +bz2="$(brew --prefix bzip2)" +zlib="$(brew --prefix zlib)"
+# fi
 
-phpbrew use php-5.6.30
+# if ! phpbrew  list | grep "7.2.24"; then
+#     phpbrew install --mirror=https://www.php.net -j $(sysctl -n hw.ncpu) 7.2.24 +default +mysql +fpm +openssl=`brew --prefix openssl` +iconv="$(brew --prefix libiconv)" +bz2="$(brew --prefix bzip2)" +zlib="$(brew --prefix zlib)"
+# fi
+
+# if ! phpbrew  list | grep "5.6.40"; then
+#     phpbrew install --mirror=https://www.php.net -j $(sysctl -n hw.ncpu) 5.6.40 +default +mysql +fpm +openssl=`brew --prefix openssl` +iconv="$(brew --prefix libiconv)" +bz2="$(brew --prefix bzip2)" +zlib="$(brew --prefix zlib)" +curl="$(brew --prefix curl)"
+# fi
+
+# # phpbrew install --mirror=https://www.php.net -j $(sysctl -n hw.ncpu) 5.5 +default +mysql +fpm +openssl=`brew --prefix openssl` +iconv="$(brew --prefix libiconv)" +bz2="$(brew --prefix bzip2)" +zlib="$(brew --prefix zlib)" +curl="$(brew --prefix curl)"
+# # phpbrew install --mirror=https://www.php.net -j $(sysctl -n hw.ncpu) 5.4 +default +mysql +fpm +openssl=`brew --prefix openssl` +iconv="$(brew --prefix libiconv)" +bz2="$(brew --prefix bzip2)" +zlib="$(brew --prefix zlib)" +curl="$(brew --prefix curl)"
+
+phpbrew use 7.3.11
+phpbrew app get composer
 
 #brew install virtphp
-wget -P /usr/bin/virtphp https://github.com/virtphp/virtphp/releases/download/v0.5.2-alpha/virtphp.phar
+wget -O virtphp  https://github.com/virtphp/virtphp/releases/download/v0.5.1-alpha/virtphp.phar
 chmod +x virtphp
 mv virtphp $HOME/bin/virtphp
 virtphp create dev
