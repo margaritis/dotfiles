@@ -31,7 +31,7 @@ brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 # Install Bash 4.
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
@@ -46,17 +46,19 @@ source .functions
 updateShells
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install vim
 brew install grep
 brew install openssh
 brew install screen
-brew install homebrew/php/php56 --with-gmp
+brew install php
+brew install gmp
+
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -96,7 +98,7 @@ brew install dark-mode
 #brew install exiv2
 brew install git
 brew install git-lfs
-brew install imagemagick --with-webp
+brew install imagemagick
 brew install lua
 brew install lynx
 brew install p7zip
@@ -127,9 +129,8 @@ brew install cmake
 brew install qt
 
 #Install libraries for Software installation
-brew tap caskroom/cask
-brew tap caskroom/versions
-brew tap caskroom/fonts
+brew tap homebrew/cask-versions
+brew tap homebrew/cask-fonts
 brew install brew-cask-completion
 
 # Node and io.js manager
@@ -159,7 +160,7 @@ source ./java/install.sh
 source ./sonar/install.sh
 
 # Heroku Toolbelt
-brew install heroku-toolbelt
+brew tap heroku/brew && brew install heroku
 
 brew install bfg
 brew install xpdf
