@@ -6,6 +6,7 @@
 # Apps
 apps=(
   teamviewer
+  anydesk
   google-drive-file-stream
   google-backup-and-sync
   alfred
@@ -33,7 +34,7 @@ apps=(
   skype
   spotify
   appcleaner
-  karabiner
+  karabiner-elements
   flash-player
   iterm2
   shiori
@@ -54,8 +55,10 @@ apps=(
   eclipse-ide
   github
   java
-  java8
-  #java7
+  java11
+  adoptopenjdk10
+  adoptopenjdk9
+  # adoptopenjdk8
   java6
   sourcetree
   #flashlight
@@ -86,4 +89,4 @@ apps=(
 echo "installing apps..."
 brew cask install --appdir="/Applications" ${apps[@]}
 
-brew cask cleanup
+brew cleanup
