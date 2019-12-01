@@ -11,10 +11,11 @@ fi
 export PATH="$HOME/.rvm/bin:$PATH";
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 #rvm install 1.9.3 --with-gcc=clang
-rvm install 2.2.10
-rvm install 2.3.7
-rvm install 2.4.4
-rvm install 2.5.1
+# rvm install 2.2.10
+# rvm install 2.3.7
+rvm install 2.4.9
+rvm install 2.5.7
+rvm install 2.6.5
 
 
 # Install gems
