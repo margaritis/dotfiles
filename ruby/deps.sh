@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-rvm use 2.4.9
+rvm use  2.6.5
 gem install bundler jekyll rails passenger cheatset sass --no-document
 
-rvm use 2.5.7
+rvm use  2.7.2
 gem install bundler jekyll rails passenger cheatset sass --no-document
 
-rvm use 2.6.5
+rvm use 3.0.0
 gem install bundler jekyll rails passenger cheatset sass --no-document
 
-rvm use 2.6.5 --default
+rvm use 2.7.2 --default

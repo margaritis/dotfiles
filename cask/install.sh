@@ -23,13 +23,13 @@ apps=(
   dropbox
   google-chrome
   google-chrome-canary
-  google-hangouts
+  #google-hangouts
   firefox
   firefox-developer-edition
   keka
   opera
   slack
-  hipchat
+  #hipchat
   gitter
   skype
   spotify
@@ -43,7 +43,7 @@ apps=(
   visual-studio-code
   texmaker
   yemuzip
-  jeromelebel-mongohub
+  #jeromelebel-mongohub
   mysqlworkbench
   sequel-pro
   mamp
@@ -54,11 +54,11 @@ apps=(
   cheatsheet
   eclipse-ide
   github
-  java
-  java11
+  # java
+  # java11
   adoptopenjdk10
   adoptopenjdk9
-  # adoptopenjdk8
+  adoptopenjdk8
   java6
   sourcetree
   #flashlight
@@ -87,6 +87,6 @@ apps=(
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
 echo "installing apps..."
-brew cask install --appdir="/Applications" ${apps[@]}
+brew install --cask --appdir="/Applications" ${apps[@]}
 
 brew cleanup

@@ -115,13 +115,13 @@ brew install vbindiff
 brew install webkit2png
 brew install zopfli
 brew install ansible
-brew install mongodb
+# brew install mongodb
 brew install z
 brew install git-flow
 brew install git-extras
 brew install composer
 brew install graphviz
-brew install pygtk
+# brew install pygtk
 brew install terraform
 
 #install Synergy dependencies
@@ -131,6 +131,9 @@ brew install qt
 #Install libraries for Software installation
 brew tap homebrew/cask-versions
 brew tap homebrew/cask-fonts
+brew tap AdoptOpenJDK/openjdk
+# brew tap homebrew/cask-cask
+
 brew install brew-cask-completion
 
 # Node and io.js manager
