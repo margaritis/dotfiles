@@ -203,7 +203,7 @@ function updateShells(){
         echo "/opt/homebrew/bin/bash" | sudo tee -a /etc/shells > /dev/null
         chsh -s /opt/homebrew/bin/bash
     else
-    	chsh -s /opt/homebrew/bin/bash
+        chsh -s /opt/homebrew/bin/bash
     fi
 }
 

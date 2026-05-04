@@ -14,27 +14,15 @@ phpbrew init
 
 source ~/.phpbrew/bashrc
 
-#
-if ! phpbrew  list | grep "8.0.30"; then
-    phpbrew install -j $(sysctl -n hw.ncpu) 8.0.30 +default +mysql +fpm +openssl=`brew --prefix openssl@1.1` +iconv="$(brew --prefix libiconv)" +bz2="$(brew --prefix bzip2)" +zlib="$(brew --prefix zlib)" -- --with-external-pcre=$(brew --prefix pcre2)
+
+if ! phpbrew  list | grep "8.4"; then
+    phpbrew install -j $(sysctl -n hw.ncpu) 8.4 +default +mysql +fpm +openssl=`brew --prefix openssl` +iconv="$(brew --prefix libiconv)" +bz2="$(brew --prefix bzip2)" +zlib="$(brew --prefix zlib)"
 fi
 
-if ! phpbrew  list | grep "8.1.27"; then
-    phpbrew install -j $(sysctl -n hw.ncpu) 8.1.27 +default +mysql +fpm +openssl=`brew --prefix openssl` +iconv="$(brew --prefix libiconv)" +bz2="$(brew --prefix bzip2)" +zlib="$(brew --prefix zlib)"
+if ! phpbrew  list | grep "8.5"; then
+    phpbrew install -j $(sysctl -n hw.ncpu) 8.5 +default +mysql +fpm +openssl=`brew --prefix openssl` +iconv="$(brew --prefix libiconv)" +bz2="$(brew --prefix bzip2)" +zlib="$(brew --prefix zlib)"
 fi
 
-if ! phpbrew  list | grep "8.2.18"; then
-    phpbrew install -j $(sysctl -n hw.ncpu) 8.2.18 +default +mysql +fpm +openssl=`brew --prefix openssl` +iconv="$(brew --prefix libiconv)" +bz2="$(brew --prefix bzip2)" +zlib="$(brew --prefix zlib)"
-fi
-
-phpbrew use 8.2.18
-
-#brew install virtphp
-# wget -O virtphp  https://github.com/virtphp/virtphp/releases/download/v0.5.1-alpha/virtphp.phar
-# chmod +x virtphp
-# mv virtphp $HOME/bin/virtphp
-# virtphp create dev
-
-# source ~/.virtphp/envs/dev/bin/activate
+phpbrew use 8.5
 
 # http://uk1.php.net/get/php-5.4.43.tar.bz2/from/a/mirror

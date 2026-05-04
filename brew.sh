@@ -92,6 +92,8 @@ brew install ucspi-tcp # `tcpserver` etc.
 brew install xz
 brew install rsync
 brew install freetds
+brew install bfg
+brew install xpdf
 
 # Install other useful binaries.
 brew install ack
@@ -123,15 +125,18 @@ brew install git-extras
 brew install composer
 brew install graphviz
 # brew install pygtk
-brew install terraform
+brew install tfenv
+tfenv install 1.12.2
+tfenv install 1.14.9
+tfenv install 1.15.0
+# brew install terraform
 
 #install Synergy dependencies
 brew install cmake
 brew install qt
 
 #Install libraries for Software installation
-brew tap homebrew/cask-versions
-brew tap homebrew/cask-fonts
+#
 brew tap AdoptOpenJDK/openjdk
 # brew tap homebrew/cask-cask
 
@@ -149,25 +154,19 @@ source ./ruby/install.sh;
 # Install python, pip and virtualenv
 source ./python/install.sh;
 
-source ./php/install.sh;
+# source ./php/install.sh;
 
-# Install MAC OS apps
+# # Install MAC OS apps
 source ./cask/install.sh;
 
-# Install Docker
+# # Install Docker
 source ./docker/install.sh;
 
-# Install Jenv
+# # Install Jenv
 source ./java/install.sh
 
-# Install Jenv
-source ./sonar/install.sh
-
-# Heroku Toolbelt
-brew tap heroku/brew && brew install heroku
-
-brew install bfg
-brew install xpdf
+# # Install Jenv
+# source ./sonar/install.sh
 
 # Remove outdated versions from the cellar.
 brew cleanup

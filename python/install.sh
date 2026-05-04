@@ -1,33 +1,19 @@
 #!/usr/bin/env bash
-# http://virtualenvwrapper.readthedocs.org/en/latest/index.html
 
-brew install python
-brew install python3
-brew install autoenv
+brew install uv
 
-brew install virtualenv
-brew install virtualenvwrapper
+# Install all Python versions
+uv python install 3.12 3.13 3.14
 
-mkdir ~/.virtualenvs
+# Set global default to 3.12 (powerline-status requires 3.12)
+echo "3.12" > ~/.python-version
 
-export WORKON_HOME=~/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/opt/homebrew/bin/python3
-source /opt/homebrew/bin/virtualenvwrapper.sh
-# mkvirtualenv venv
-mkvirtualenv --python=`which python3` venv
-workon venv
+# Create the venv at ~/.virtualenvs/venv with Python 3.12 so powerline paths still work
+uv venv --python 3.12 ~/.virtualenvs/venv
 
-# pip should only run if there is a virtualenv currently activated
-export PIP_REQUIRE_VIRTUALENV=true
-# cache pip-installed packages to avoid re-downloading
-export PIP_DOWNLOAD_CACHE=$HOME/Library/Caches/pip
+# Install packages into the venv
+uv pip install --python ~/.virtualenvs/venv powerline-status pyodbc
 
-pip3 install --upgrade pip
-pip3 install --upgrade setuptools
-pip3 install --upgrade wheel
-
-pip3 install awsebcli
-pip3 install powerline-status
-# Codeintel issue with python3.
-# pip install codeintel
-pip3 install pyodbc
+# Install CLI tools in isolated uv-managed environments
+uv tool install awsebcli
+uv tool install checkov

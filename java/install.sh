@@ -16,8 +16,7 @@ jenv enable-plugin maven
 
 source ./.functions
 
-# addJavaToJenv /System/Library/Java/JavaVirtualMachines/
 addJavaToJenv /Library/Java/JavaVirtualMachines/
 
-jenv global 22.0.1
-jenv shell 22.0.1
+jenv global temurin64-26
+jenv shell temurin64-26

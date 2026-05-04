@@ -4,18 +4,18 @@
 packages=(
   eslint
   jshint
-  grunt-cli
   yo
-  tern
-  yaml2json
   gulp
   pm2
   mocha
-  pug
-  karma-cli
   babel-cli
-  depcheck
-  pug-lint
+  # depcheck
+  # karma-cli
+  # pug
+  # yaml2json
+  # tern
+  # pug-lint
+  # grunt-cli
   # generator-api-service
   # nsp
   # jscs
@@ -32,7 +32,7 @@ packages=(
   # sass-lint
 )
 
-npm install npm@10.6.0 -g
+npm install npm@11.13.0 -g
 
 echo "installing npm packages..."
 npm install -g  ${packages[@]}

@@ -4,16 +4,21 @@
     [
         {
             "characters": "<",
-            "selector": "text.html"
+            "selector": "text.html",
         },
         {
             "characters": ".",
-            "selector": "source.js"
-        }
+            "selector": "source.js",
+        },
+        {
+            "characters": "\\",
+            "selector": "text.tex.latex",
+        },
     ],
     "bold_folder_labels": true,
     "caret_style": "phase",
     "close_windows_when_empty": true,
+    "color_scheme": "Packages/User/SublimeLinter/Breath (SL).tmTheme",
     "command": "paste",
     "default_encoding": "UTF-8",
     "default_line_ending": "unix",
@@ -37,7 +42,8 @@
         ".tags_sorted_by_file",
         ".gemtags",
         ".idea",
-        ".sonar"
+        ".sonar",
+        "*.zip"
     ],
     "find_selected_text": true,
     "folder_exclude_patterns":
@@ -45,18 +51,18 @@
         ".git",
         "node_modules",
         ".sonar",
-        ".idea"
+        ".idea",
+        ".terraform"
     ],
     "font_face": "Anonymous Pro",
-    "font_size": 18,
+    "font_size": 20,
+    "gpu_window_buffer": false,
     "highlight_line": true,
     "highlight_modified_tabs": true,
     "hot_exit": true,
     "ignored_packages":
     [
         "Vintage",
-        "SublimeCodeIntel",
-        "Markdown"
     ],
     "line_padding_bottom": 1,
     "line_padding_top": 1,
@@ -73,10 +79,10 @@
                 ],
                 "paths":
                 [
-                ]
+                ],
             },
             "caption": "Maven: Run test",
-            "command": "maven"
+            "command": "maven",
         },
         {
             "args":
@@ -87,10 +93,10 @@
                 ],
                 "paths":
                 [
-                ]
+                ],
             },
             "caption": "Maven: Run install",
-            "command": "maven"
+            "command": "maven",
         },
         {
             "args":
@@ -102,10 +108,10 @@
                 ],
                 "paths":
                 [
-                ]
+                ],
             },
             "caption": "Maven: Run clean test",
-            "command": "maven"
+            "command": "maven",
         },
         {
             "args":
@@ -117,10 +123,10 @@
                 ],
                 "paths":
                 [
-                ]
+                ],
             },
             "caption": "Maven: Run clean install",
-            "command": "maven"
+            "command": "maven",
         }
     ],
     "preview_on_click": true,
@@ -132,7 +138,7 @@
     "show_encoding": true,
     "show_full_path": true,
     "show_line_endings": true,
-    "tab_size": 4,
+    "tab_size": 2,
     "tern_argument_hints": true,
     "tern_arguments":
     [
@@ -145,5 +151,8 @@
     "theme": "Cobalt2.sublime-theme",
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
-    "word_wrap": true
+    "word_wrap": true,
+    "update_check": false,
+    "index_files": true,
+    "scroll_past_end": true,
 }

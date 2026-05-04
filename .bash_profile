@@ -1,5 +1,5 @@
 # Add `~/bin` to the `$PATH`
-export PATH="/opt/homebrew/sbin:$HOME/bin:$HOME/.rvm/bin:$HOME/.jenv/bin:/opt/homebrew/bin:$PATH";
+export PATH="/opt/homebrew/sbin:$HOME/bin:$HOME/.rvm/bin:$HOME/.jenv/bin:$HOME/.local/bin:/opt/homebrew/bin:$PATH";
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -70,29 +70,11 @@ source ~/.nvm/versions/node/`nvm current`/lib/node_modules/npm/lib/utils/complet
 # Add z
 source `brew --prefix`/etc/profile.d/z.sh
 
-# pip should only run if there is a virtualenv currently activated
-export PIP_REQUIRE_VIRTUALENV=true;
-# cache pip-installed packages to avoid re-downloading
-export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache;
+# uv shell completion
+eval "$(uv generate-shell-completion bash)"
 
-export VIRTUAL_ENV_DISABLE_PROMPT=1
-
-# Add virtualenvwrapper for managing virtualenv
-source /opt/homebrew/bin/virtualenvwrapper.sh
-
-# Set venv as working virtual env
-workon venv
-
-# Enable bash completion for pip
-# pip bash completion start
-_pip_completion()
-{
-    COMPREPLY=( $( COMP_WORDS="${COMP_WORDS[*]}" \
-                   COMP_CWORD=$COMP_CWORD \
-                   PIP_AUTO_COMPLETE=1 $1 ) )
-}
-complete -o default -F _pip_completion pip
-# pip bash completion end
+# Activate the Python 3.12 venv (for powerline-status)
+source ~/.virtualenvs/venv/bin/activate
 
 # AWS bash completion
 complete -C aws_completer aws

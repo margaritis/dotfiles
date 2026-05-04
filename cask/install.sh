@@ -12,7 +12,7 @@ apps=(
   qlcolorcode
   qlstephen
   qlmarkdown
-  quicklook-json
+  # quicklook-json
   qlprettypatch
   quicklook-csv
   betterzip
@@ -23,16 +23,15 @@ apps=(
   #hyperswitch
   dropbox
   google-chrome
-  google-chrome-canary
+  google-chrome@canary
   #google-hangouts
   firefox
-  firefox-developer-edition
+  firefox@developer-edition
   keka
   opera
   slack
   #hipchat
   #gitter
-  skype
   spotify
   appcleaner
   karabiner-elements
@@ -43,7 +42,7 @@ apps=(
   sublime-text
   visual-studio-code
   texmaker
-  yemuzip
+  # yemuzip
   #jeromelebel-mongohub
   mysqlworkbench
   #sequel-pro
@@ -53,7 +52,7 @@ apps=(
   transmission
   dash
   vlc
-  cheatsheet
+  # cheatsheet
   eclipse-ide
   github
   # java
@@ -88,14 +87,10 @@ apps=(
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
 echo "installing apps..."
-brew install --cask --no-quarantine --appdir="/Applications" ${apps[@]}
+brew install --cask --appdir="/Applications" ${apps[@]}
 
 brew cleanup
 
-
 # brew tap homebrew/cask-versions
-
-
 # xattr -r ~/Library/QuickLook
-
 # xattr -d -r com.apple.quarantine ~/Library/QuickLook
